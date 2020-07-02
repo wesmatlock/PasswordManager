@@ -1,0 +1,61 @@
+# For SwiftLint: 0.32.0
+---
+disabled_rules:
+  - identifier_name
+  - multiple_closures_with_trailing_closure
+  - todo
+statement_position:
+  statement_mode: uncuddled_else
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - Ballpark/Core/TestSupport/SimulatorCameraSupport
+  - build
+opt_in_rules:
+  - closure_spacing
+  - empty_count
+  - explicit_init
+  - implicit_return
+  - anyobject_protocol
+  - flatmap_over_map_reduce
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+function_parameter_count:
+  warning: 8
+  error: 15
+line_length:
+  warning: 126 # github line wrap
+  error: 200
+identifier_name:
+  min_length:
+    warning: 1
+    error: 1
+  max_length:
+    warning: 50
+    error: 60 # swiftlint default
+type_name:
+  min_length:
+    warning: 1
+    error: 1
+  max_length:
+    warning: 100
+    error: 1000 # swiftlint default
+cyclomatic_complexity:
+  warning: 10
+  error: 20 # swiftlint default
+  
+custom_rules:
+  focus_left_in_test:
+    name: "Focused Test present"
+    regex: "f(describe|context|it)\\("
+    severity: warning
+    message: "Focus test found"
+  disabled_test:
+    name: "Disabled Test present"
+    regex: "x(describe|context|it)\\("
+    severity: warning
+    message: "Disabled test found"
+  time_interval_since_reference_date:
+    name: "Use of timeIntervalSinceReferenceDate"
+    message: "Found use of timeIntervalSinceReferenceDate instead of timeIntervalSince1970"
+    severity: warning
+    regex: "timeIntervalSinceReferenceDate"

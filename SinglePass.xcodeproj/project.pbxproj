@@ -28,6 +28,11 @@
 		52E0BCD3240251E80079B108 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0BCD2240251E80079B108 /* AuthenticationManager.swift */; };
 		52E0BCD62402526D0079B108 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0BCD52402526D0079B108 /* FormValidation.swift */; };
 		62591BE524ABFB5100CCB756 /* BiometricButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62591BE424ABFB5100CCB756 /* BiometricButtonLabel.swift */; };
+		62784FC224ACDFA6009E081C /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC124ACDFA6009E081C /* NavBar.swift */; };
+		62784FC724ACF7C0009E081C /* CurvedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC624ACF7C0009E081C /* CurvedShape.swift */; };
+		62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC824ACF8B6009E081C /* CurvedShapeModifier.swift */; };
+		62784FCB24AD1A65009E081C /* LCSeachField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FCA24AD1A65009E081C /* LCSeachField.swift */; };
+		62784FCD24AE0097009E081C /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FCC24AE0097009E081C /* FilterView.swift */; };
 		62C04CD72486EA7E000006DC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62C04CD62486EA7E000006DC /* KeychainSwift */; };
 		62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CD82486EB76000006DC /* AuthKeys.swift */; };
 		62C04CDB2486EBFC000006DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CDA2486EBFC000006DC /* User.swift */; };
@@ -57,6 +62,11 @@
 		52E0BCD2240251E80079B108 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		52E0BCD52402526D0079B108 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
 		62591BE424ABFB5100CCB756 /* BiometricButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricButtonLabel.swift; sourceTree = "<group>"; };
+		62784FC124ACDFA6009E081C /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		62784FC624ACF7C0009E081C /* CurvedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShape.swift; sourceTree = "<group>"; };
+		62784FC824ACF8B6009E081C /* CurvedShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShapeModifier.swift; sourceTree = "<group>"; };
+		62784FCA24AD1A65009E081C /* LCSeachField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCSeachField.swift; sourceTree = "<group>"; };
+		62784FCC24AE0097009E081C /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		62C04CD82486EB76000006DC /* AuthKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeys.swift; sourceTree = "<group>"; };
 		62C04CDA2486EBFC000006DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +102,7 @@
 		5294E66123F48F6A00E63543 /* SinglePass */ = {
 			isa = PBXGroup;
 			children = (
+				62784FC524ACF7A5009E081C /* Shapes */,
 				52E0BCD42402525F0079B108 /* Models */,
 				5294E68923F5258600E63543 /* Shared */,
 				5294E68223F51EEF00E63543 /* Views */,
@@ -132,6 +143,7 @@
 			children = (
 				5294E67D23F49DFA00E63543 /* NeumorphicEffect.swift */,
 				5246335223F5F4CE00F1959E /* FormModifier.swift */,
+				62784FC824ACF8B6009E081C /* CurvedShapeModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -147,12 +159,15 @@
 		5294E68223F51EEF00E63543 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				62784FCA24AD1A65009E081C /* LCSeachField.swift */,
 				5294E68323F51F0000E63543 /* ShareTextfield.swift */,
 				5294E68523F523A000E63543 /* PasswordField.swift */,
 				5294E68723F5257600E63543 /* LCButton.swift */,
 				5294E68C23F52F0000E63543 /* LoginView.swift */,
 				5246335623F674C900F1959E /* AccountCreationView.swift */,
 				62591BE424ABFB5100CCB756 /* BiometricButtonLabel.swift */,
+				62784FC124ACDFA6009E081C /* NavBar.swift */,
+				62784FCC24AE0097009E081C /* FilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +189,14 @@
 				62C04CDA2486EBFC000006DC /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		62784FC524ACF7A5009E081C /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				62784FC624ACF7C0009E081C /* CurvedShape.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,15 +284,20 @@
 				5294E68423F51F0000E63543 /* ShareTextfield.swift in Sources */,
 				52E0BCD62402526D0079B108 /* FormValidation.swift in Sources */,
 				5294E68623F523A000E63543 /* PasswordField.swift in Sources */,
+				62784FCD24AE0097009E081C /* FilterView.swift in Sources */,
 				5294E68D23F52F0000E63543 /* LoginView.swift in Sources */,
 				5246335523F5FB3900F1959E /* NotificationExt.swift in Sources */,
+				62784FC724ACF7C0009E081C /* CurvedShape.swift in Sources */,
 				5294E68123F4A08A00E63543 /* AuthenticationView.swift in Sources */,
+				62784FC224ACDFA6009E081C /* NavBar.swift in Sources */,
 				52E0BCD3240251E80079B108 /* AuthenticationManager.swift in Sources */,
 				5246335723F674C900F1959E /* AccountCreationView.swift in Sources */,
 				5294E68823F5257600E63543 /* LCButton.swift in Sources */,
 				5294E66523F48F6A00E63543 /* SceneDelegate.swift in Sources */,
 				62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */,
+				62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */,
 				5294E66A23F48F6A00E63543 /* ContentView.swift in Sources */,
+				62784FCB24AD1A65009E081C /* LCSeachField.swift in Sources */,
 				5294E66823F48F6A00E63543 /* SinglePass.xcdatamodeld in Sources */,
 				62C04CDB2486EBFC000006DC /* User.swift in Sources */,
 				62591BE524ABFB5100CCB756 /* BiometricButtonLabel.swift in Sources */,
