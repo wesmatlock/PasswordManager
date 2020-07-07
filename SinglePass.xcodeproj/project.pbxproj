@@ -47,6 +47,10 @@
 		627B00A424B3FD2F00633321 /* LinearGradientExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A324B3FD2F00633321 /* LinearGradientExt.swift */; };
 		627B00A624B3FDE400633321 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A524B3FDE400633321 /* ViewExt.swift */; };
 		627B00A924B402EC00633321 /* PasswordGeneratorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A824B402EC00633321 /* PasswordGeneratorService.swift */; };
+		627B00AC24B48C1200633321 /* PasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00AB24B48C1200633321 /* PasswordItem.swift */; };
+		627B00AE24B48C9E00633321 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00AD24B48C9E00633321 /* NoteItem.swift */; };
+		627B00B124B48D6000633321 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00B024B48D6000633321 /* PasswordViewModel.swift */; };
+		627B00B324B48D6A00633321 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00B224B48D6A00633321 /* NoteViewModel.swift */; };
 		62C04CD72486EA7E000006DC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62C04CD62486EA7E000006DC /* KeychainSwift */; };
 		62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CD82486EB76000006DC /* AuthKeys.swift */; };
 		62C04CDB2486EBFC000006DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CDA2486EBFC000006DC /* User.swift */; };
@@ -95,6 +99,10 @@
 		627B00A324B3FD2F00633321 /* LinearGradientExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientExt.swift; sourceTree = "<group>"; };
 		627B00A524B3FDE400633321 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		627B00A824B402EC00633321 /* PasswordGeneratorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorService.swift; sourceTree = "<group>"; };
+		627B00AB24B48C1200633321 /* PasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordItem.swift; sourceTree = "<group>"; };
+		627B00AD24B48C9E00633321 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
+		627B00B024B48D6000633321 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		627B00B224B48D6A00633321 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		62C04CD82486EB76000006DC /* AuthKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeys.swift; sourceTree = "<group>"; };
 		62C04CDA2486EBFC000006DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,22 +138,19 @@
 		5294E66123F48F6A00E63543 /* SinglePass */ = {
 			isa = PBXGroup;
 			children = (
-				627B00A724B402D700633321 /* Services */,
-				627B00A024B3F8F600633321 /* Styles */,
-				5294E66223F48F6A00E63543 /* AppDelegate.swift */,
-				5294E66B23F48F6A00E63543 /* Assets.xcassets */,
-				5294E67923F4913E00E63543 /* Extensions */,
 				5294E67323F48F6A00E63543 /* Info.plist */,
-				5294E67023F48F6A00E63543 /* LaunchScreen.storyboard */,
+				627B00AA24B489A400633321 /* Core */,
+				5294E67923F4913E00E63543 /* Extensions */,
 				52E0BCD42402525F0079B108 /* Models */,
 				5294E67C23F49DCF00E63543 /* Modifiers */,
 				5294E66D23F48F6A00E63543 /* Preview Content */,
-				5294E66423F48F6A00E63543 /* SceneDelegate.swift */,
 				5294E67F23F4A07A00E63543 /* Screens */,
+				627B00A724B402D700633321 /* Services */,
 				62784FC524ACF7A5009E081C /* Shapes */,
 				5294E68923F5258600E63543 /* Shared */,
-				5294E66623F48F6A00E63543 /* SinglePass.xcdatamodeld */,
+				627B00A024B3F8F600633321 /* Styles */,
 				62784FD024AE2A20009E081C /* Utils */,
+				627B00AF24B48D3600633321 /* ViewModels */,
 				5294E68223F51EEF00E63543 /* Views */,
 			);
 			path = SinglePass;
@@ -228,6 +233,8 @@
 			children = (
 				52E0BCD52402526D0079B108 /* FormValidation.swift */,
 				62C04CDA2486EBFC000006DC /* User.swift */,
+				627B00AB24B48C1200633321 /* PasswordItem.swift */,
+				627B00AD24B48C9E00633321 /* NoteItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,6 +270,27 @@
 				627B00A824B402EC00633321 /* PasswordGeneratorService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		627B00AA24B489A400633321 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5294E66223F48F6A00E63543 /* AppDelegate.swift */,
+				5294E66B23F48F6A00E63543 /* Assets.xcassets */,
+				5294E67023F48F6A00E63543 /* LaunchScreen.storyboard */,
+				5294E66423F48F6A00E63543 /* SceneDelegate.swift */,
+				5294E66623F48F6A00E63543 /* SinglePass.xcdatamodeld */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		627B00AF24B48D3600633321 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				627B00B024B48D6000633321 /* PasswordViewModel.swift */,
+				627B00B224B48D6A00633321 /* NoteViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,7 +371,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6237F64E24B36AA8004A9FAB /* StingExt.swift in Sources */,
+				627B00B124B48D6000633321 /* PasswordViewModel.swift in Sources */,
 				5294E66323F48F6A00E63543 /* AppDelegate.swift in Sources */,
+				627B00B324B48D6A00633321 /* NoteViewModel.swift in Sources */,
 				623C467624AF5ACD004DF2AA /* RowItem.swift in Sources */,
 				5294E67B23F4915100E63543 /* ColorExt.swift in Sources */,
 				62723A8624AFA88A00C4213A /* HomeView.swift in Sources */,
@@ -365,10 +395,12 @@
 				627B00A224B3F91000633321 /* CustomToggleStyle.swift in Sources */,
 				627B009F24B3F5AB00633321 /* PasswordGeneratorView.swift in Sources */,
 				5294E68823F5257600E63543 /* LCButton.swift in Sources */,
+				627B00AC24B48C1200633321 /* PasswordItem.swift in Sources */,
 				627B00A924B402EC00633321 /* PasswordGeneratorService.swift in Sources */,
 				5294E66523F48F6A00E63543 /* SceneDelegate.swift in Sources */,
 				62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */,
 				62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */,
+				627B00AE24B48C9E00633321 /* NoteItem.swift in Sources */,
 				6237F65024B36F3E004A9FAB /* EditFormView.swift in Sources */,
 				5294E66A23F48F6A00E63543 /* ContentView.swift in Sources */,
 				627B00A624B3FDE400633321 /* ViewExt.swift in Sources */,
