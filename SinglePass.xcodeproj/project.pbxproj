@@ -51,6 +51,7 @@
 		627B00AE24B48C9E00633321 /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00AD24B48C9E00633321 /* NoteItem.swift */; };
 		627B00B124B48D6000633321 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00B024B48D6000633321 /* PasswordViewModel.swift */; };
 		627B00B324B48D6A00633321 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00B224B48D6A00633321 /* NoteViewModel.swift */; };
+		627B00B524B4907400633321 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00B424B4907400633321 /* CoreDataManager.swift */; };
 		62C04CD72486EA7E000006DC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62C04CD62486EA7E000006DC /* KeychainSwift */; };
 		62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CD82486EB76000006DC /* AuthKeys.swift */; };
 		62C04CDB2486EBFC000006DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CDA2486EBFC000006DC /* User.swift */; };
@@ -103,6 +104,7 @@
 		627B00AD24B48C9E00633321 /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		627B00B024B48D6000633321 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
 		627B00B224B48D6A00633321 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
+		627B00B424B4907400633321 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		62C04CD82486EB76000006DC /* AuthKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeys.swift; sourceTree = "<group>"; };
 		62C04CDA2486EBFC000006DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				627B00A824B402EC00633321 /* PasswordGeneratorService.swift */,
+				627B00B424B4907400633321 /* CoreDataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				5246335323F5F4CE00F1959E /* FormModifier.swift in Sources */,
 				5294E68B23F525A900E63543 /* HapticFeedback.swift in Sources */,
 				5294E67E23F49DFA00E63543 /* NeumorphicEffect.swift in Sources */,
+				627B00B524B4907400633321 /* CoreDataManager.swift in Sources */,
 				5294E68423F51F0000E63543 /* ShareTextfield.swift in Sources */,
 				6237F64C24B3687E004A9FAB /* FormHeader.swift in Sources */,
 				52E0BCD62402526D0079B108 /* FormValidation.swift in Sources */,
