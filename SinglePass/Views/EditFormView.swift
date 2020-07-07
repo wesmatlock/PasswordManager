@@ -14,6 +14,7 @@ struct EditFormView: View {
   @State private var formType = FormType.Password
 
   @State private var formOffsetY: CGFloat = 0
+  @State private var showPasswordGeneratorView = false
 
   var body: some View {
 
@@ -64,10 +65,12 @@ struct EditFormView: View {
       VStack(alignment: .leading) {
         PasswordField(value: $password, header: "Password", placeholder: "Make sure the password is secure")
         Button(action: {
-
+          self.showPasswordGeneratorView.toggle()
         }) {
           Text("Genereate password")
             .foregroundColor(.accent)
+        }.sheet(isPresented: self.$showPasswordGeneratorView) {
+          PasswordGeneratorView(generatedPassword: self.$password)
         }
       }
       SharedTextfield(value: $website, header: "Website", placeholder: "https://")

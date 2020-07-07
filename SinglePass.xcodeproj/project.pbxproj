@@ -46,6 +46,7 @@
 		627B00A224B3F91000633321 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A124B3F91000633321 /* CustomToggleStyle.swift */; };
 		627B00A424B3FD2F00633321 /* LinearGradientExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A324B3FD2F00633321 /* LinearGradientExt.swift */; };
 		627B00A624B3FDE400633321 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A524B3FDE400633321 /* ViewExt.swift */; };
+		627B00A924B402EC00633321 /* PasswordGeneratorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A824B402EC00633321 /* PasswordGeneratorService.swift */; };
 		62C04CD72486EA7E000006DC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62C04CD62486EA7E000006DC /* KeychainSwift */; };
 		62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CD82486EB76000006DC /* AuthKeys.swift */; };
 		62C04CDB2486EBFC000006DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CDA2486EBFC000006DC /* User.swift */; };
@@ -93,6 +94,7 @@
 		627B00A124B3F91000633321 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
 		627B00A324B3FD2F00633321 /* LinearGradientExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientExt.swift; sourceTree = "<group>"; };
 		627B00A524B3FDE400633321 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		627B00A824B402EC00633321 /* PasswordGeneratorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorService.swift; sourceTree = "<group>"; };
 		62C04CD82486EB76000006DC /* AuthKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeys.swift; sourceTree = "<group>"; };
 		62C04CDA2486EBFC000006DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 		5294E66123F48F6A00E63543 /* SinglePass */ = {
 			isa = PBXGroup;
 			children = (
+				627B00A724B402D700633321 /* Services */,
 				627B00A024B3F8F600633321 /* Styles */,
 				5294E66223F48F6A00E63543 /* AppDelegate.swift */,
 				5294E66B23F48F6A00E63543 /* Assets.xcassets */,
@@ -254,6 +257,14 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
+		627B00A724B402D700633321 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				627B00A824B402EC00633321 /* PasswordGeneratorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +365,7 @@
 				627B00A224B3F91000633321 /* CustomToggleStyle.swift in Sources */,
 				627B009F24B3F5AB00633321 /* PasswordGeneratorView.swift in Sources */,
 				5294E68823F5257600E63543 /* LCButton.swift in Sources */,
+				627B00A924B402EC00633321 /* PasswordGeneratorService.swift in Sources */,
 				5294E66523F48F6A00E63543 /* SceneDelegate.swift in Sources */,
 				62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */,
 				62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */,
