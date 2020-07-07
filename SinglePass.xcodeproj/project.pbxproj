@@ -42,6 +42,10 @@
 		62784FCD24AE0097009E081C /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FCC24AE0097009E081C /* FilterView.swift */; };
 		62784FCF24AE29D7009E081C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FCE24AE29D7009E081C /* HeaderView.swift */; };
 		62784FD224AE2A3E009E081C /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FD124AE2A3E009E081C /* Filter.swift */; };
+		627B009F24B3F5AB00633321 /* PasswordGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B009E24B3F5AB00633321 /* PasswordGeneratorView.swift */; };
+		627B00A224B3F91000633321 /* CustomToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A124B3F91000633321 /* CustomToggleStyle.swift */; };
+		627B00A424B3FD2F00633321 /* LinearGradientExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A324B3FD2F00633321 /* LinearGradientExt.swift */; };
+		627B00A624B3FDE400633321 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627B00A524B3FDE400633321 /* ViewExt.swift */; };
 		62C04CD72486EA7E000006DC /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 62C04CD62486EA7E000006DC /* KeychainSwift */; };
 		62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CD82486EB76000006DC /* AuthKeys.swift */; };
 		62C04CDB2486EBFC000006DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C04CDA2486EBFC000006DC /* User.swift */; };
@@ -85,6 +89,10 @@
 		62784FCC24AE0097009E081C /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		62784FCE24AE29D7009E081C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		62784FD124AE2A3E009E081C /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		627B009E24B3F5AB00633321 /* PasswordGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorView.swift; sourceTree = "<group>"; };
+		627B00A124B3F91000633321 /* CustomToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleStyle.swift; sourceTree = "<group>"; };
+		627B00A324B3FD2F00633321 /* LinearGradientExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientExt.swift; sourceTree = "<group>"; };
+		627B00A524B3FDE400633321 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		62C04CD82486EB76000006DC /* AuthKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeys.swift; sourceTree = "<group>"; };
 		62C04CDA2486EBFC000006DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +128,7 @@
 		5294E66123F48F6A00E63543 /* SinglePass */ = {
 			isa = PBXGroup;
 			children = (
+				627B00A024B3F8F600633321 /* Styles */,
 				5294E66223F48F6A00E63543 /* AppDelegate.swift */,
 				5294E66B23F48F6A00E63543 /* Assets.xcassets */,
 				5294E67923F4913E00E63543 /* Extensions */,
@@ -153,6 +162,8 @@
 				5294E67A23F4915100E63543 /* ColorExt.swift */,
 				5246335423F5FB3900F1959E /* NotificationExt.swift */,
 				6237F64D24B36AA8004A9FAB /* StingExt.swift */,
+				627B00A324B3FD2F00633321 /* LinearGradientExt.swift */,
+				627B00A524B3FDE400633321 /* ViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,6 +205,7 @@
 				623C467724AF5CB0004DF2AA /* SectionTitle.swift */,
 				6237F64B24B3687E004A9FAB /* FormHeader.swift */,
 				6237F64F24B36F3E004A9FAB /* EditFormView.swift */,
+				627B009E24B3F5AB00633321 /* PasswordGeneratorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,6 +244,14 @@
 				6237F64924B3684A004A9FAB /* FormType.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		627B00A024B3F8F600633321 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				627B00A124B3F91000633321 /* CustomToggleStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,18 +351,22 @@
 				62784FC224ACDFA6009E081C /* NavBar.swift in Sources */,
 				52E0BCD3240251E80079B108 /* AuthenticationManager.swift in Sources */,
 				5246335723F674C900F1959E /* AccountCreationView.swift in Sources */,
+				627B00A224B3F91000633321 /* CustomToggleStyle.swift in Sources */,
+				627B009F24B3F5AB00633321 /* PasswordGeneratorView.swift in Sources */,
 				5294E68823F5257600E63543 /* LCButton.swift in Sources */,
 				5294E66523F48F6A00E63543 /* SceneDelegate.swift in Sources */,
 				62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */,
 				62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */,
 				6237F65024B36F3E004A9FAB /* EditFormView.swift in Sources */,
 				5294E66A23F48F6A00E63543 /* ContentView.swift in Sources */,
+				627B00A624B3FDE400633321 /* ViewExt.swift in Sources */,
 				62784FCB24AD1A65009E081C /* LCSeachField.swift in Sources */,
 				5294E66823F48F6A00E63543 /* SinglePass.xcdatamodeld in Sources */,
 				62C04CDB2486EBFC000006DC /* User.swift in Sources */,
 				623C467824AF5CB0004DF2AA /* SectionTitle.swift in Sources */,
 				62591BE524ABFB5100CCB756 /* BiometricButtonLabel.swift in Sources */,
 				62784FD224AE2A3E009E081C /* Filter.swift in Sources */,
+				627B00A424B3FD2F00633321 /* LinearGradientExt.swift in Sources */,
 				62784FCF24AE29D7009E081C /* HeaderView.swift in Sources */,
 				6237F64A24B3684A004A9FAB /* FormType.swift in Sources */,
 			);
