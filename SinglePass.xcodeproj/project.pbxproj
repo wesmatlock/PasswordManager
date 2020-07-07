@@ -27,7 +27,14 @@
 		5294E68D23F52F0000E63543 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294E68C23F52F0000E63543 /* LoginView.swift */; };
 		52E0BCD3240251E80079B108 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0BCD2240251E80079B108 /* AuthenticationManager.swift */; };
 		52E0BCD62402526D0079B108 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0BCD52402526D0079B108 /* FormValidation.swift */; };
+		6237F64A24B3684A004A9FAB /* FormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237F64924B3684A004A9FAB /* FormType.swift */; };
+		6237F64C24B3687E004A9FAB /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237F64B24B3687E004A9FAB /* FormHeader.swift */; };
+		6237F64E24B36AA8004A9FAB /* StingExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237F64D24B36AA8004A9FAB /* StingExt.swift */; };
+		6237F65024B36F3E004A9FAB /* EditFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237F64F24B36F3E004A9FAB /* EditFormView.swift */; };
+		623C467624AF5ACD004DF2AA /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C467524AF5ACD004DF2AA /* RowItem.swift */; };
+		623C467824AF5CB0004DF2AA /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C467724AF5CB0004DF2AA /* SectionTitle.swift */; };
 		62591BE524ABFB5100CCB756 /* BiometricButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62591BE424ABFB5100CCB756 /* BiometricButtonLabel.swift */; };
+		62723A8624AFA88A00C4213A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62723A8524AFA88A00C4213A /* HomeView.swift */; };
 		62784FC224ACDFA6009E081C /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC124ACDFA6009E081C /* NavBar.swift */; };
 		62784FC724ACF7C0009E081C /* CurvedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC624ACF7C0009E081C /* CurvedShape.swift */; };
 		62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC824ACF8B6009E081C /* CurvedShapeModifier.swift */; };
@@ -63,7 +70,14 @@
 		5294E68C23F52F0000E63543 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		52E0BCD2240251E80079B108 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		52E0BCD52402526D0079B108 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		6237F64924B3684A004A9FAB /* FormType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormType.swift; sourceTree = "<group>"; };
+		6237F64B24B3687E004A9FAB /* FormHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
+		6237F64D24B36AA8004A9FAB /* StingExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StingExt.swift; sourceTree = "<group>"; };
+		6237F64F24B36F3E004A9FAB /* EditFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFormView.swift; sourceTree = "<group>"; };
+		623C467524AF5ACD004DF2AA /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
+		623C467724AF5CB0004DF2AA /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		62591BE424ABFB5100CCB756 /* BiometricButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricButtonLabel.swift; sourceTree = "<group>"; };
+		62723A8524AFA88A00C4213A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		62784FC124ACDFA6009E081C /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		62784FC624ACF7C0009E081C /* CurvedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShape.swift; sourceTree = "<group>"; };
 		62784FC824ACF8B6009E081C /* CurvedShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShapeModifier.swift; sourceTree = "<group>"; };
@@ -108,7 +122,6 @@
 			children = (
 				5294E66223F48F6A00E63543 /* AppDelegate.swift */,
 				5294E66B23F48F6A00E63543 /* Assets.xcassets */,
-				5294E66923F48F6A00E63543 /* ContentView.swift */,
 				5294E67923F4913E00E63543 /* Extensions */,
 				5294E67323F48F6A00E63543 /* Info.plist */,
 				5294E67023F48F6A00E63543 /* LaunchScreen.storyboard */,
@@ -139,6 +152,7 @@
 			children = (
 				5294E67A23F4915100E63543 /* ColorExt.swift */,
 				5246335423F5FB3900F1959E /* NotificationExt.swift */,
+				6237F64D24B36AA8004A9FAB /* StingExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -157,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5294E68023F4A08A00E63543 /* AuthenticationView.swift */,
+				62723A8524AFA88A00C4213A /* HomeView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -164,6 +179,8 @@
 		5294E68223F51EEF00E63543 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5294E66923F48F6A00E63543 /* ContentView.swift */,
+				623C467524AF5ACD004DF2AA /* RowItem.swift */,
 				62784FCA24AD1A65009E081C /* LCSeachField.swift */,
 				5294E68323F51F0000E63543 /* ShareTextfield.swift */,
 				5294E68523F523A000E63543 /* PasswordField.swift */,
@@ -174,6 +191,9 @@
 				62784FC124ACDFA6009E081C /* NavBar.swift */,
 				62784FCC24AE0097009E081C /* FilterView.swift */,
 				62784FCE24AE29D7009E081C /* HeaderView.swift */,
+				623C467724AF5CB0004DF2AA /* SectionTitle.swift */,
+				6237F64B24B3687E004A9FAB /* FormHeader.swift */,
+				6237F64F24B36F3E004A9FAB /* EditFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				62784FD124AE2A3E009E081C /* Filter.swift */,
+				6237F64924B3684A004A9FAB /* FormType.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -290,12 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6237F64E24B36AA8004A9FAB /* StingExt.swift in Sources */,
 				5294E66323F48F6A00E63543 /* AppDelegate.swift in Sources */,
+				623C467624AF5ACD004DF2AA /* RowItem.swift in Sources */,
 				5294E67B23F4915100E63543 /* ColorExt.swift in Sources */,
+				62723A8624AFA88A00C4213A /* HomeView.swift in Sources */,
 				5246335323F5F4CE00F1959E /* FormModifier.swift in Sources */,
 				5294E68B23F525A900E63543 /* HapticFeedback.swift in Sources */,
 				5294E67E23F49DFA00E63543 /* NeumorphicEffect.swift in Sources */,
 				5294E68423F51F0000E63543 /* ShareTextfield.swift in Sources */,
+				6237F64C24B3687E004A9FAB /* FormHeader.swift in Sources */,
 				52E0BCD62402526D0079B108 /* FormValidation.swift in Sources */,
 				5294E68623F523A000E63543 /* PasswordField.swift in Sources */,
 				62784FCD24AE0097009E081C /* FilterView.swift in Sources */,
@@ -310,13 +335,16 @@
 				5294E66523F48F6A00E63543 /* SceneDelegate.swift in Sources */,
 				62C04CD92486EB76000006DC /* AuthKeys.swift in Sources */,
 				62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */,
+				6237F65024B36F3E004A9FAB /* EditFormView.swift in Sources */,
 				5294E66A23F48F6A00E63543 /* ContentView.swift in Sources */,
 				62784FCB24AD1A65009E081C /* LCSeachField.swift in Sources */,
 				5294E66823F48F6A00E63543 /* SinglePass.xcdatamodeld in Sources */,
 				62C04CDB2486EBFC000006DC /* User.swift in Sources */,
+				623C467824AF5CB0004DF2AA /* SectionTitle.swift in Sources */,
 				62591BE524ABFB5100CCB756 /* BiometricButtonLabel.swift in Sources */,
 				62784FD224AE2A3E009E081C /* Filter.swift in Sources */,
 				62784FCF24AE29D7009E081C /* HeaderView.swift in Sources */,
+				6237F64A24B3684A004A9FAB /* FormType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
