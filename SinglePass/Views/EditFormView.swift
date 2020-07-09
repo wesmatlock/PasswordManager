@@ -16,6 +16,10 @@ struct EditFormView: View {
   @State private var formOffsetY: CGFloat = 0
   @State private var showPasswordGeneratorView = false
 
+  var passwordModel: PasswordViewModel?
+  var noteModel: NoteViewModel?
+  @EnvironmentObject var coredataManager: CoreDataManager
+
   var body: some View {
 
     SubscriptionView(content: createBodyContent(),
@@ -82,9 +86,9 @@ struct EditFormView: View {
     return LCButton(text: "Save", backgroundColor: .accent) {
       switch formType {
       case .Password:
-        break
+        self.saveNewPassword()
       case .Note:
-        break
+        self.saveNewNote()
       }
     }
   }
@@ -98,6 +102,51 @@ struct EditFormView: View {
         .aspectRatio(contentMode: .fit)
         .frame(width: 30)
         .foregroundColor(favoriteImage == "heart" ? .gray : .orange)
+    }
+  }
+
+  fileprivate func saveNewPassword() {
+    if passwordModel == nil {
+      if !username.isEmpty && !password.isEmpty && !website.isEmpty {
+
+        let password = PasswordItem(context: coredataManager.context)
+        password.createdAt = Date()
+        password.id = UUID()
+        password.isFavorite = false
+        password.lastUsed = Date()
+        password.note = passwordNote
+        password.site = website.lowercased()
+        password.username = self.username
+        password.password = self.password
+
+        _ = coredataManager.save()
+
+        withAnimation {
+          self.showDetails = false
+        }
+      }
+    }
+  }
+
+  fileprivate func saveNewNote() {
+    if noteModel == nil {
+      if !noteName.isEmpty && !noteContent.isEmpty {
+
+        let note = NoteItem(context: coredataManager.context)
+        note.id = UUID()
+        note.isFavorite = false
+        note.createdAt = Date()
+        note.lastUsed = Date()
+        note.name = noteName
+        note.content = noteContent
+
+        _ = coredataManager.save()
+
+        withAnimation {
+          self.showDetails = false
+        }
+      }
+
     }
   }
 }
