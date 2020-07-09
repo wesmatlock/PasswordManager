@@ -4,6 +4,8 @@ struct HomeView: View {
 
   @State var showEditFormView = false
 
+  @ObservedObject var coredataManager = CoreDataManager.shared
+
   var body: some View {
     ZStack(alignment: .bottomTrailing) {
       VStack {
@@ -16,8 +18,12 @@ struct HomeView: View {
 
   private func createList() -> some View {
     List {
-      createPasswordsSection()
-      createNotesSection()
+      if coredataManager.showPasswords {
+        createPasswordsSection()
+      }
+      if coredataManager.showNotes {
+        createNotesSection()
+      }
     }
     .onAppear {
       UITableView.appearance().backgroundColor = UIColor(named: "bg")
@@ -28,17 +34,31 @@ struct HomeView: View {
   }
 
   private func createPasswordsSection() -> some View {
-    Section(header: SectionTitle(title: "Passwords:")) {
-      ForEach(1..<5) { i in
-        RowItem()
+
+    FetchResultWrapper(predicate: self.coredataManager.passwordPredicate, sortDescriptors: [self.coredataManager.sortDescriptor]) { (passwords: [PasswordItem]) in
+
+      if !passwords.isEmpty {
+        Section(header: SectionTitle(title: "Passwords")
+        ) {
+          ForEach(passwords.map { PasswordViewModel(passwordItem: $0) } ) { password in
+            RowItem(passwordModel: password).listRowBackground(Color.background)
+          }
+        }
       }
     }
   }
 
   private func createNotesSection() -> some View {
-    Section(header: SectionTitle(title: "Notes")) {
-      ForEach(1..<5) { i in
-        RowItem()
+
+    FetchResultWrapper(predicate: self.coredataManager.notePredicate, sortDescriptors: [self.coredataManager.sortDescriptor]) { (notes: [NoteItem]) in
+
+      if !notes.isEmpty {
+        Section(header: SectionTitle(title: "Notes")
+        ) {
+          ForEach(notes.map { NoteViewModel(noteItem: $0) } ) { note in
+            RowItem(noteModel: note).listRowBackground(Color.background)
+          }
+        }
       }
     }
   }
@@ -63,7 +83,7 @@ struct HomeView: View {
   }
 
   fileprivate func createEditFormView() -> some View {
-    EditFormView(showDetails: .constant(false))
+    EditFormView(showDetails: $showEditFormView)
   }
 }
 

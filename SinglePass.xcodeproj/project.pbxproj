@@ -27,6 +27,7 @@
 		5294E68D23F52F0000E63543 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294E68C23F52F0000E63543 /* LoginView.swift */; };
 		52E0BCD3240251E80079B108 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0BCD2240251E80079B108 /* AuthenticationManager.swift */; };
 		52E0BCD62402526D0079B108 /* FormValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0BCD52402526D0079B108 /* FormValidation.swift */; };
+		623211DD24B4DA3B002AC71D /* FetchResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623211DC24B4DA3B002AC71D /* FetchResultWrapper.swift */; };
 		6237F64A24B3684A004A9FAB /* FormType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237F64924B3684A004A9FAB /* FormType.swift */; };
 		6237F64C24B3687E004A9FAB /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237F64B24B3687E004A9FAB /* FormHeader.swift */; };
 		6237F64E24B36AA8004A9FAB /* StingExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237F64D24B36AA8004A9FAB /* StingExt.swift */; };
@@ -35,6 +36,7 @@
 		623C467824AF5CB0004DF2AA /* SectionTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623C467724AF5CB0004DF2AA /* SectionTitle.swift */; };
 		62591BE524ABFB5100CCB756 /* BiometricButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62591BE424ABFB5100CCB756 /* BiometricButtonLabel.swift */; };
 		62723A8624AFA88A00C4213A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62723A8524AFA88A00C4213A /* HomeView.swift */; };
+		6273929824B50577002A0F72 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6273929724B50577002A0F72 /* DateExt.swift */; };
 		62784FC224ACDFA6009E081C /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC124ACDFA6009E081C /* NavBar.swift */; };
 		62784FC724ACF7C0009E081C /* CurvedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC624ACF7C0009E081C /* CurvedShape.swift */; };
 		62784FC924ACF8B6009E081C /* CurvedShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62784FC824ACF8B6009E081C /* CurvedShapeModifier.swift */; };
@@ -80,6 +82,7 @@
 		5294E68C23F52F0000E63543 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		52E0BCD2240251E80079B108 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		52E0BCD52402526D0079B108 /* FormValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidation.swift; sourceTree = "<group>"; };
+		623211DC24B4DA3B002AC71D /* FetchResultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchResultWrapper.swift; sourceTree = "<group>"; };
 		6237F64924B3684A004A9FAB /* FormType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormType.swift; sourceTree = "<group>"; };
 		6237F64B24B3687E004A9FAB /* FormHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
 		6237F64D24B36AA8004A9FAB /* StingExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StingExt.swift; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		623C467724AF5CB0004DF2AA /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		62591BE424ABFB5100CCB756 /* BiometricButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricButtonLabel.swift; sourceTree = "<group>"; };
 		62723A8524AFA88A00C4213A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6273929724B50577002A0F72 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 		62784FC124ACDFA6009E081C /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
 		62784FC624ACF7C0009E081C /* CurvedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShape.swift; sourceTree = "<group>"; };
 		62784FC824ACF8B6009E081C /* CurvedShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShapeModifier.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 				6237F64D24B36AA8004A9FAB /* StingExt.swift */,
 				627B00A324B3FD2F00633321 /* LinearGradientExt.swift */,
 				627B00A524B3FDE400633321 /* ViewExt.swift */,
+				6273929724B50577002A0F72 /* DateExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				6237F64B24B3687E004A9FAB /* FormHeader.swift */,
 				6237F64F24B36F3E004A9FAB /* EditFormView.swift */,
 				627B009E24B3F5AB00633321 /* PasswordGeneratorView.swift */,
+				623211DC24B4DA3B002AC71D /* FetchResultWrapper.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,6 +391,7 @@
 				5294E67E23F49DFA00E63543 /* NeumorphicEffect.swift in Sources */,
 				627B00B524B4907400633321 /* CoreDataManager.swift in Sources */,
 				5294E68423F51F0000E63543 /* ShareTextfield.swift in Sources */,
+				623211DD24B4DA3B002AC71D /* FetchResultWrapper.swift in Sources */,
 				6237F64C24B3687E004A9FAB /* FormHeader.swift in Sources */,
 				52E0BCD62402526D0079B108 /* FormValidation.swift in Sources */,
 				5294E68623F523A000E63543 /* PasswordField.swift in Sources */,
@@ -413,6 +420,7 @@
 				62C04CDB2486EBFC000006DC /* User.swift in Sources */,
 				623C467824AF5CB0004DF2AA /* SectionTitle.swift in Sources */,
 				62591BE524ABFB5100CCB756 /* BiometricButtonLabel.swift in Sources */,
+				6273929824B50577002A0F72 /* DateExt.swift in Sources */,
 				62784FD224AE2A3E009E081C /* Filter.swift in Sources */,
 				627B00A424B3FD2F00633321 /* LinearGradientExt.swift in Sources */,
 				62784FCF24AE29D7009E081C /* HeaderView.swift in Sources */,
